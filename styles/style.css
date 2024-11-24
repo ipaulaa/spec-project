@@ -1,7 +1,6 @@
 body {
   background-color: #ddd;
   font-family: "DM Sans", sans-serif;
-  /* font-family: "DM Serif Display", serif; */
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,7 +20,8 @@ header div {
   align-items: center;
 }
 
-header div, nav ul {
+header div,
+nav ul {
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -39,8 +39,8 @@ header img {
   transition: opacity 0.2s;
 }
 
-.btn:hover {
-  opacity: 0.8;
+.btn:hover, .info a:hover {
+  opacity: 0.7;
 }
 
 nav {
@@ -64,3 +64,51 @@ nav a {
 nav a:hover {
   font-weight: 700;
 }
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+h1 {
+  font:
+    3.5rem "DM Serif Display",
+    serif;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 40px;
+}
+
+.info p {
+  margin-right: auto;
+}
+
+.info a {
+  transition: opacity 0.2s;
+}
+
+ion-icon {
+  font-size: 24px;
+}
+
+.info a:first-of-type {
+  color: #3b5998;
+}
+
+.info a:nth-of-type(2) {
+  color: #26a7de;
+}
+
+.info a:last-of-type {
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #d0021b;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
