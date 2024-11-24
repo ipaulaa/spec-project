@@ -1,13 +1,19 @@
 body {
-  background-color: #f8f8f8;
+  background-color: #ddd;
   font-family: "DM Sans", sans-serif;
   /* font-family: "DM Serif Display", serif; */
   font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #222;
 }
 
 header {
-  height: 75px;
   background: #fff;
+}
+
+header div {
+  height: 75px;
   padding: 0 20px;
 
   display: flex;
@@ -15,11 +21,16 @@ header {
   align-items: center;
 }
 
+header div, nav ul {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header img {
   height: 50px;
 }
 
-header a {
+.btn {
   color: #fff;
   padding: 10px 24px;
   background-color: #d0021b;
@@ -28,6 +39,28 @@ header a {
   transition: opacity 0.2s;
 }
 
-header a:hover {
+.btn:hover {
   opacity: 0.8;
+}
+
+nav {
+  background-color: #d0021b;
+}
+
+nav ul {
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  display: inline-block;
+  width: 75px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  font-weight: 700;
 }
